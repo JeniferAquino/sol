@@ -1,0 +1,247 @@
+.tituloseccion{ color: #f1a012;
+font-family: chewy;
+text-transform: uppercase;
+font-size: 25px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+height: 50px;
+ background-color: white;
+animation-name:texto;
+animation-iteration-count:unset;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+animation-delay: 0s;}
+@keyframes texto {
+0%{font-size: 5px}
+25%{font-size: 10px}
+75%{font-size: 15px}
+100%{font-size: 25px}
+	
+}
+.contendorgrid {
+width: 100%;
+display: grid;
+grid-gap: 20px;
+grid-template-columns:repeat(3, 1fr); 
+grid-template-rows: repeat(4, auto);}
+.contenedorgrid .header {grid-column-start: 1;
+	grid-column-end: 4;
+grid-row: span 1; width: 100%;}
+.contenedorgrid .main {grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row: span 2;
+}
+.contenedor .formularioymapa 
+{grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row: span 3;
+}
+.contenedorgrid .footer
+{grid-column-start: 1;
+	grid-column-end: 4;
+grid-row: span 4;}
+
+.formularioymapa {width:900px;
+height: 200px;
+margin-left: 30px;
+display:flex ;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+*{ 
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;}
+
+.promosemanal { 
+width: 90%;
+height: 400px;
+padding:35px;
+display: grid;
+grid-template-columns: repeat(3, 300px);
+grid-template-rows: repeat(1, 300px);
+transition: width 2s, heigth 3s;
+margin: auto;}
+
+.promosemanal:hover { width: 100%;
+height: 450px;}
+
+
+
+
+.ancho {
+	width: 100%;
+	height: 70px;
+	margin: auto;
+background-color: #f1a012;
+display: flex;
+flex-direction: center}
+.logo { 
+float: left;
+
+width: 30%;
+height: 200px;
+text-align: center;}
+nav { width: 100%; 
+height: 70px;
+float: right;  
+text-align: left;
+padding-top: 24px;
+box-sizing: border-box; }
+.logo p a {
+	color: white;
+	font-size: 50px;
+	font-family: cursive;
+	text-decoration: none;
+	padding-top: 10px;
+	box-sizing: border-box;
+	font-family: chewy;
+}
+nav ul li {display: inline;}
+nav ul li a {color: white; font-family: chewy;
+font-size: 20px;text-decoration: none;
+text-transform: uppercase;
+padding-left: 15px; 
+}
+
+
+@font-face {
+	font-family: chewy; 
+	src: url(Chewy/Chewy-Regular.ttf);
+}
+nav ul li a:hover {
+	color: #d5f4f6;}
+
+.nosotros-flex{
+	display:flex; 
+	flex-direction: row;
+	justify-content: center;
+width: 80%;
+height: 50%;
+margin: auto;}
+.nosotros-flex img {width: 150px; height: 200px;}
+.jeni
+{font-family: chewy;
+color: #f1a012;
+display: block;
+text-align: center;
+padding: 25px;
+border-radius: 25%;}
+
+.gisel {font-family: chewy;
+color: #f1a012;
+display: block; 
+text-align: center;
+padding: 25px;
+border-radius: 25%;}
+
+.galeria img {width: 150px; 
+	height: 200px;
+	object-fit: cover;
+text-align: center; box-sizing: border-box;
+justify-content: center;}
+.galeria
+{ width: 100%;
+
+margin-left: 10% ;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 200px;
+grid-gap: 50px;
+}
+.galeria img { box-sizing: border-box;
+transition: width 2s, height 2s; }
+.galeria img:hover { width: 225px;
+height: 225px;}
+
+
+.oferta {
+transform: rotate(20deg);
+width: 200px;
+height: 100px;
+color: white;
+background-image: linear-gradient(to left, #f1a012, yellow);
+font-family: chewy;
+font-size: 45px;
+float: right;
+border-radius: 100%;
+text-align: center;
+padding-top: 15px;
+margin-top: 10px;
+}
+
+.footer { 
+color: white; 
+font-family:chewy;
+text-align: center;
+margin-bottom: 2px; 
+background-color:#f1a012;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	margin-top: 20px;
+}
+.footer img {margin-left: 15px;
+box-sizing: border-box;
+ width: 25px; height: 25px;
+}
+.formulariodecontacto {
+width: 400px;
+font-family: cursive;
+text-align: center;
+color: #f1a012;
+padding-left: 15px;
+margin-top: 20px;
+margin-left: 20px;
+border-radius: 10px;
+background:#d5f4f6;
+bottom: white;
+outline: none;
+box-sizing: border-box;
+display: inline-block;
+}
+
+.video { 
+padding-top: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;}
+
+.mapa {color: #f1a012;
+ font-family: cursive;
+text-align: left;
+height: 100px;
+box-sizing: border-box;
+display: inline-block;}
+
+@media all and (max-width:768px){
+.galeria {
+grid-template-columns:repeat(2, 1fr);
+}
+
+.nosotros-flex{ flex-direction: column;}
+
+.promosemanal {width: 100%}
+.formularioymapa {flex-direction: column;
+	justify-content: flex-start;
+width: 100%;
+height: 400px; 
+box-sizing: border-box;}
+.video {width:0px;
+height: 0px;}
+}
+
+
+.celular ul { display:block;}
+.celular {position: absolute;
+background: #f1a012; 
+width: 100%;
+height: 100px;}
